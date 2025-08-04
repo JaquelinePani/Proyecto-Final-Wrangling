@@ -1,0 +1,209 @@
+data,countries,local,industry_sector,accident_level,potential_accident_level,genre,employee_ou_terceiro,risco_critico
+2016,Country_01,Local_01,Mining,1,4,Male,Third Party,Pressed
+2016,Country_02,Local_02,Mining,1,4,Male,Employee,Pressurized Systems
+2016,Country_01,Local_03,Mining,1,3,Male,Third Party (Remote),Manual Tools
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Pressurized Systems
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Fall prevention (same level)
+2016,Country_01,Local_04,Mining,1,3,Male,Third Party,Pressed
+2016,Country_01,Local_06,Metals,1,2,Male,Third Party,Chemical substances
+2016,Country_02,Local_05,Metals,1,1,Male,Employee,Liquid Metal
+2016,Country_01,Local_01,Mining,4,5,Male,Third Party,Electrical installation
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Confined space
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Liquid Metal
+2016,Country_01,Local_06,Metals,1,2,Male,Employee,Manual Tools
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Pressed
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party (Remote),Pressurized Systems / Chemical Substances
+2016,Country_02,Local_08,Metals,1,3,Male,Employee,Pressed
+2016,Country_01,Local_06,Metals,1,3,Male,Employee,Blocking and isolation of energies
+2016,Country_01,Local_06,Metals,1,3,Male,Employee,Manual Tools
+2016,Country_01,Local_06,Metals,1,4,Male,Third Party,Suspended Loads
+2016,Country_01,Local_06,Metals,2,3,Male,Third Party (Remote),Chemical substances
+2016,Country_02,Local_05,Metals,1,2,Male,Employee,Pressed
+2016,Country_02,Local_08,Metals,2,2,Male,Employee,Manual Tools
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Chemical substances
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Fall prevention (same level)
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Chemical substances
+2016,Country_02,Local_08,Metals,1,3,Male,Third Party (Remote),Pressed
+2016,Country_03,Local_10,Others,4,4,Male,Third Party,Poll
+2016,Country_02,Local_09,Metals,3,4,Male,Employee,Manual Tools
+2016,Country_01,Local_06,Metals,1,3,Male,Third Party,Fall prevention (same level)
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party,Pressed
+2016,Country_02,Local_08,Metals,1,3,Male,Employee,Pressurized Systems
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Cut
+2016,Country_02,Local_05,Metals,2,4,Male,Third Party,Pressurized Systems / Chemical Substances
+2016,Country_02,Local_05,Metals,1,2,Female,Third Party,Cut
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Chemical substances
+2016,Country_02,Local_05,Metals,1,4,Male,Employee,Pressed
+2016,Country_02,Local_05,Metals,1,4,Female,Third Party (Remote),Chemical substances
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Manual Tools
+2016,Country_02,Local_05,Metals,1,3,Female,Third Party (Remote),Chemical substances
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Chemical substances
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party,Manual Tools
+2016,Country_02,Local_08,Metals,1,2,Male,Third Party (Remote),Manual Tools
+2016,Country_01,Local_06,Metals,1,2,Male,Third Party (Remote),Chemical substances
+2016,Country_02,Local_08,Metals,1,3,Male,Employee,Blocking and isolation of energies
+2016,Country_01,Local_06,Metals,1,1,Male,Third Party,Fall prevention (same level)
+2016,Country_03,Local_10,Others,4,4,Male,Third Party,Fall
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Cut
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Cut
+2016,Country_01,Local_06,Metals,1,1,Male,Employee,Fall prevention
+2016,Country_01,Local_06,Metals,4,4,Male,Employee,Fall prevention (same level)
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Manual Tools
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Employee,Bees
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_02,Local_08,Metals,4,5,Male,Employee,"
+Not applicable"
+2016,Country_02,Local_08,Metals,4,5,Male,Employee,Not applicable
+2016,Country_02,Local_08,Metals,5,5,Male,Employee,Not applicable
+2016,Country_02,Local_08,Metals,1,2,Male,Employee,Manual Tools
+2016,Country_01,Local_06,Metals,3,4,Male,Third Party,Pressed
+2016,Country_01,Local_06,Metals,3,4,Male,Third Party,Manual Tools
+2016,Country_02,Local_05,Metals,3,4,Male,Third Party (Remote),Suspended Loads
+2016,Country_02,Local_05,Metals,1,2,Female,Employee,Chemical substances
+2016,Country_01,Local_06,Metals,1,3,Male,Third Party,Fall prevention (same level)
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Chemical substances
+2016,Country_02,Local_12,Others,1,2,Female,Employee,Traffic
+2016,Country_02,Local_08,Metals,1,2,Male,Third Party (Remote),Pressurized Systems
+2016,Country_02,Local_05,Metals,2,3,Female,Third Party,Manual Tools
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Bees
+2016,Country_02,Local_08,Metals,1,2,Male,Employee,Cut
+2016,Country_02,Local_08,Metals,1,3,Male,Employee,Projection
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Pressed
+2016,Country_02,Local_05,Metals,1,2,Male,Employee,Cut
+2016,Country_02,Local_05,Metals,1,2,Male,Employee,Chemical substances
+2016,Country_01,Local_06,Metals,1,2,Male,Employee,Pressurized Systems / Chemical Substances
+2016,Country_02,Local_05,Metals,2,4,Male,Third Party (Remote),Manual Tools
+2016,Country_01,Local_06,Metals,4,4,Male,Employee,Suspended Loads
+2016,Country_02,Local_05,Metals,1,2,Female,Employee,Venomous Animals
+2016,Country_02,Local_05,Metals,1,2,Male,Employee,Suspended Loads
+2016,Country_01,Local_06,Metals,1,2,Male,Third Party,Pressed
+2016,Country_02,Local_05,Metals,2,4,Male,Employee,Pressurized Systems
+2016,Country_03,Local_10,Others,1,1,Male,Third Party,Fall
+2016,Country_02,Local_05,Metals,1,2,Male,Third Party (Remote),Blocking and isolation of energies
+2016,Country_02,Local_05,Metals,2,3,Male,Third Party,Manual Tools
+2016,Country_01,Local_06,Metals,1,2,Female,Third Party,Pressurized Systems
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Pressed
+2016,Country_02,Local_08,Metals,1,2,Male,Employee,Pressed
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Chemical substances
+2016,Country_02,Local_05,Metals,1,3,Male,Employee,Pressurized Systems
+2016,Country_02,Local_08,Metals,4,4,Male,Employee,Pressed
+2016,Country_01,Local_06,Metals,1,2,Male,Employee,Plates
+2016,Country_01,Local_01,Mining,1,4,Male,Employee,Suspended Loads
+2017,Country_01,Local_06,Metals,1,2,Male,Third Party (Remote),Pressed
+2017,Country_01,Local_01,Mining,1,4,Male,Third Party,Projection
+2017,Country_02,Local_08,Metals,1,1,Male,Employee,Pressed
+2017,Country_01,Local_06,Metals,3,3,Male,Employee,Cut
+2017,Country_02,Local_05,Metals,2,4,Male,Employee,Projection/Burning
+2017,Country_03,Local_10,Others,1,4,Male,Third Party,Fall prevention
+2017,Country_02,Local_08,Metals,1,2,Male,Third Party (Remote),Manual Tools
+2017,Country_01,Local_03,Mining,1,4,Male,Third Party,Projection
+2017,Country_01,Local_03,Mining,1,3,Male,Employee,remains of choco
+2017,Country_02,Local_08,Metals,1,4,Male,Employee,Liquid Metal
+2017,Country_01,Local_06,Metals,4,4,Male,Third Party (Remote),Fall prevention
+2017,Country_01,Local_04,Mining,1,3,Male,Third Party,Manual Tools
+2017,Country_01,Local_04,Mining,1,4,Male,Third Party,remains of choco
+2017,Country_02,Local_05,Metals,1,3,Male,Third Party (Remote),Fall
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_03,Mining,5,6,Male,Third Party,remains of choco
+2017,Country_01,Local_01,Mining,1,3,Male,Third Party,Vehicles and Mobile Equipment
+2017,Country_01,Local_01,Mining,1,3,Male,Employee,Vehicles and Mobile Equipment
+2017,Country_01,Local_01,Mining,1,4,Male,Employee,Vehicles and Mobile Equipment
+2017,Country_03,Local_10,Others,1,2,Male,Third Party,Projection/Choco
+2017,Country_02,Local_02,Mining,1,3,Male,Employee,Manual Tools
+2017,Country_01,Local_03,Mining,2,5,Male,Employee,remains of choco
+2017,Country_01,Local_03,Mining,2,4,Male,Third Party,Cut
+2017,Country_02,Local_08,Metals,1,1,Male,Third Party (Remote),Pressed
+2017,Country_01,Local_04,Mining,2,3,Male,Third Party,Cut
+2017,Country_01,Local_06,Metals,1,3,Male,Employee,Machine Protection
+2017,Country_01,Local_03,Mining,4,5,Male,Third Party (Remote),Power lock
+2017,Country_01,Local_06,Metals,1,1,Male,Third Party (Remote),Manual Tools
+2017,Country_02,Local_08,Metals,2,3,Male,Employee,Pressed
+2017,Country_02,Local_05,Metals,1,4,Male,Employee,Projection
+2017,Country_02,Local_05,Metals,3,4,Male,Employee,Burn
+2017,Country_01,Local_03,Mining,4,5,Male,Third Party,Pressed
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_03,Mining,1,2,Female,Third Party (Remote),Fall
+2017,Country_01,Local_04,Mining,1,3,Male,Third Party,Projection/Manual Tools
+2017,Country_01,Local_01,Mining,1,3,Male,Employee,Chemical substances
+2017,Country_01,Local_01,Mining,1,4,Male,Third Party,Projection
+2017,Country_01,Local_04,Mining,4,4,Male,Third Party,Vehicles and Mobile Equipment
+2017,Country_02,Local_07,Mining,1,3,Male,Third Party (Remote),Venomous Animals
+2017,Country_01,Local_01,Mining,4,4,Male,Third Party (Remote),Fall
+2017,Country_01,Local_01,Mining,1,3,Male,Employee,Projection
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_01,Mining,1,3,Male,Third Party,Fall
+2017,Country_02,Local_07,Mining,1,4,Male,Employee,Fall prevention
+2017,Country_01,Local_03,Mining,2,4,Male,Third Party,remains of choco
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_02,Local_02,Mining,1,5,Male,Employee,Vehicles and Mobile Equipment
+2017,Country_01,Local_04,Mining,1,3,Male,Third Party (Remote),Fall
+2017,Country_01,Local_03,Mining,1,5,Male,Third Party,Vehicles and Mobile Equipment
+2017,Country_01,Local_01,Mining,5,5,Male,Third Party,Vehicles and Mobile Equipment
+2017,Country_02,Local_05,Metals,1,3,Male,Third Party,Machine Protection
+2017,Country_01,Local_03,Mining,2,4,Male,Third Party,Individual protection equipment
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_02,Local_08,Metals,2,4,Female,Employee,Chemical substances
+2017,Country_01,Local_03,Mining,5,5,Male,Third Party (Remote),Power lock
+2017,Country_01,Local_06,Metals,5,5,Male,Third Party (Remote),Power lock
+2017,Country_01,Local_03,Mining,2,5,Male,Third Party,Vehicles and Mobile Equipment
+2017,Country_02,Local_05,Metals,1,4,Male,Third Party,Fall prevention
+2017,Country_02,Local_05,Metals,1,3,Male,Employee,Chemical substances
+2017,Country_02,Local_05,Metals,1,4,Male,Employee,Suspended Loads
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_03,Mining,1,4,Male,Third Party,Fall prevention
+2017,Country_02,Local_02,Mining,1,2,Male,Third Party,Chemical substances
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_03,Mining,1,4,Male,Third Party (Remote),Electrical Shock
+2017,Country_01,Local_03,Mining,1,4,Male,Third Party (Remote),Electrical Shock
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_01,Local_06,Metals,1,2,Male,Third Party,Projection
+2017,Country_03,Local_10,Others,1,1,Male,Third Party,Venomous Animals
+2017,Country_02,Local_07,Mining,4,5,Male,Employee,remains of choco
+2017,Country_01,Local_01,Mining,4,4,Male,Employee,Pressed
+2017,Country_02,Local_02,Mining,2,3,Male,Employee,Manual Tools
+2017,Country_01,Local_01,Mining,3,4,Male,Third Party,Manual Tools
+2017,Country_02,Local_07,Mining,4,5,Male,Employee,Projection
+2017,Country_02,Local_07,Mining,2,5,Male,Employee,Projection
+2017,Country_01,Local_04,Mining,5,5,Male,Third Party,Fall
+2017,Country_02,Local_05,Metals,1,3,Female,Third Party (Remote),Cut
+2017,Country_02,Local_07,Mining,1,1,Male,Employee,Cut
+2017,Country_01,Local_06,Metals,4,4,Male,Third Party,Pressed
+2017,Country_01,Local_06,Metals,1,2,Male,Employee,Projection
+2017,Country_01,Local_04,Mining,1,4,Male,Third Party,Projection of fragments
+2017,Country_01,Local_04,Mining,1,4,Male,Third Party,Projection of fragments
+2017,Country_01,Local_03,Mining,1,4,Male,Third Party,Projection
+2017,Country_01,Local_06,Metals,1,3,Male,Third Party,Fall
+2017,Country_01,Local_04,Mining,1,2,Male,Employee,Pressed
+2017,Country_01,Local_06,Metals,1,2,Male,Third Party,Cut
+2017,Country_02,Local_02,Mining,3,4,Male,Third Party (Remote),Pressed
+2017,Country_01,Local_03,Mining,1,4,Male,Employee,Projection
+2017,Country_01,Local_03,Mining,2,4,Male,Third Party,Projection
+2017,Country_01,Local_04,Mining,4,4,Male,Third Party,remains of choco
+2017,Country_01,Local_03,Mining,1,2,Female,Third Party,Cut
+2017,Country_03,Local_10,Others,1,1,Male,Employee,Venomous Animals
+2017,Country_02,Local_02,Mining,1,3,Male,Employee,Pressed
+2017,Country_02,Local_09,Metals,1,2,Male,Employee,Venomous Animals
+2017,Country_02,Local_05,Metals,1,2,Male,Employee,Cut
+2017,Country_01,Local_04,Mining,1,2,Female,Third Party,Fall prevention (same level)

@@ -1,0 +1,181 @@
+---
+title: "Proyecto Final"
+author: "Jaqueline_Pani_Delgado"
+date: "2025-08-02"
+output: 
+    html_document:
+    toc: true
+    toc_depth: 2
+    theme: lumen
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## 1. Cargar las librerías 
+
+```{r packages}
+library(readr)
+library(readxl)
+library(here)
+library(janitor)
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(stringr)
+library(ggplot2)
+```
+
+## DATASET 1: Accidentes en la industria
+## 2. Cargar dataset
+
+```{r carga de datos 1}
+datos_originales <- read_csv(here("data", "raw", "datos.csv"))
+#Auditoria de datos
+head(datos_originales)
+str(datos_originales)
+```
+
+## 3. Limpieza y estandarización de texto (Dataset1)
+
+```{r limpieza 1}
+datos_originales <- datos_originales %>% clean_names()
+colnames(datos_originales)
+
+datos_procesados <- datos_originales %>%
+  filter(risco_critico != "Others") %>%
+  mutate(
+    data = trimws(data),  # Quita espacios invisibles
+    data = dmy_hm(data),  # Convierte a fecha con hora
+  )%>%
+  mutate(data = format(as.Date(data), "%Y"))
+
+datos_procesados$accident_level <- as.numeric(as.roman(datos_procesados$accident_level))
+datos_procesados$potential_accident_level <- as.numeric(as.roman(datos_procesados$potential_accident_level))
+
+head(datos_procesados)
+```
+
+Guardar datos procesados (Dataset 1)
+
+```{r datos procesados}
+write_csv(datos_procesados, here("data", "processed", "datos_procesados.csv"))
+```
+
+## DATASET 2: Fallas de máquinas en industria
+## 2. Cargar dataset -----------------------------------------
+```{r carga de datos 2}
+datos_web <- read_csv("https://docs.google.com/spreadsheets/d/1K6eIbhs2pVl7iKgPcio16UfS8mhA0fXAKsxPFf83QyM/export?format=csv")
+View(datos_web)
+#Auditoria de datos
+head(datos_web)
+str(datos_web)
+```
+
+## 3. Limpieza y estandarización de texto (Dataset2)
+```{r limpieza 2}
+datos_web <- datos_web %>% clean_names()
+colnames(datos_web)
+datos_procesados_web <- datos_web
+
+#Filtrar datos: Máquinas CNC instaladas en el año 2016,2017
+datos_procesados_web <- datos_procesados_web[datos_procesados_web$machine_type %in% c("CNC_Lathe"), ]
+datos_procesados_web <- datos_procesados_web %>%
+  filter(installation_year %in% c(2016, 2017))
+
+datos_procesados_web <- datos_procesados_web %>%
+  filter(failure_history_count != "0")
+
+head(datos_procesados_web)
+```
+
+Guardar datos procesados (Dataset2)
+
+```{r datos procesados web}
+write_csv(datos_procesados_web, here("data", "processed", "datos_procesados_web.csv"))
+```
+
+## 4. Transformación: dataset de accidentes
+
+```{r accidentes}
+accidentes <- datos_procesados %>%
+  mutate(
+    anio = as.integer(data),
+    is_third_party = case_when(
+      grepl("Third Party", employee_ou_terceiro, ignore.case = TRUE) ~ TRUE,
+      TRUE ~ FALSE
+    ),
+    severidad_accidente = case_when(
+      accident_level >= 4 ~ "Alta",
+      accident_level == 3 ~ "Media",
+      accident_level <= 2 ~ "Baja"
+    ),
+    riesgo_general = case_when(
+      grepl("Fall|Pressure|Manual|Pressed", risco_critico, ignore.case = TRUE) ~ "Crítico",
+      TRUE ~ "No Crítico"
+    )
+  ) %>%
+  select(anio, countries, local, industry_sector, accident_level,
+         potential_accident_level, genre, is_third_party, severidad_accidente, riesgo_general)
+```
+
+## 4. Transformación: dataset de accidentes de máquinas
+
+```{r maquinas}
+maquinas <- datos_procesados_web %>%
+  rename(anio = installation_year) %>%
+  mutate(
+    condiciones_criticas = case_when(
+      temperature_c > 60 | vibration_mms > 20 | sound_d_b > 80 ~ TRUE,
+      TRUE ~ FALSE
+    ),
+    eficiencia_baja = case_when(
+      power_consumption_k_w > 200 & remaining_useful_life_days < 100 ~ TRUE,
+      TRUE ~ FALSE
+    )
+  ) %>%
+  group_by(anio) %>%
+  summarise(
+    maquinas_criticas = sum(condiciones_criticas, na.rm = TRUE),
+    maquinas_baja_eficiencia = sum(eficiencia_baja, na.rm = TRUE),
+    total_maquinas = n(),
+    promedio_temp = mean(temperature_c, na.rm = TRUE),
+    promedio_sonido = mean(sound_d_b, na.rm = TRUE)
+  )
+```
+
+## 5. Unificación del dataset (Años)
+```{r unificación}
+final_dataset <- accidentes %>%
+  group_by(anio) %>%
+  summarise(
+    total_accidentes = n(),
+    accidentes_criticos = sum(riesgo_general == "Crítico", na.rm = TRUE),
+    porcentaje_terceros = mean(is_third_party),
+    porcentaje_alta_severidad = mean(severidad_accidente == "Alta")
+  ) %>%
+  left_join(maquinas, by = "anio")
+```
+
+## 6. Exportar los datos limpios y transformados
+```{r datos finales}
+write_csv(final_dataset, here("data", "processed", "final_dataset.csv"))
+head(final_dataset)
+glimpse(final_dataset)
+```
+
+## 7. Gráfico
+```{r gráfico}
+ggplot(final_dataset, aes(x = porcentaje_alta_severidad, y = maquinas_criticas)) +
+  geom_point(size = 4, color = "#FFA590") +
+  geom_smooth(method = "lm", se = FALSE, color = "#004C99") +
+  scale_x_continuous(labels = scales::percent) +
+  labs(
+    title = "Severidad Alta vs Máquinas en Condiciones Críticas",
+    x = "Porcentaje de Accidentes de Alta Severidad",
+    y = "Máquinas Críticas"
+  ) +
+  theme_minimal()
+```

@@ -1,0 +1,3 @@
+anio,total_accidentes,accidentes_criticos,porcentaje_terceros,porcentaje_alta_severidad,maquinas_criticas,maquinas_baja_eficiencia,total_maquinas,promedio_temp,promedio_sonido
+2016,108,37,0.5555555555555556,0.08333333333333333,231,22,291,59.491993127147765,74.99659793814433
+2017,99,30,0.6666666666666666,0.15151515151515152,259,20,320,61.07203125,74.89390625
